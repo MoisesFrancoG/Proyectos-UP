@@ -1,0 +1,167 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial;
+    background-color: rgb(14, 14, 14);
+}
+
+.navbar {
+	width: 100%;
+	padding: 5px;
+	background-color: #000000;
+	box-sizing: border-box;
+}
+
+.navbar .contenido {
+	max-width: 100%;
+	display:flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+.bars ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	width: 800px;
+	justify-content: space-around;
+	padding: 0;
+	padding-left: 4px;
+}
+
+.bars ul img {
+    height: 80px;
+    position: absolute;
+    left: 10px;
+    border-radius: 5px;
+}
+.bars ul li a {
+	text-decoration: none;
+	color:#ffffff;
+}
+
+.btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn-neon:hover {
+    color: black;
+    background-color: rgb(17, 0, 255);
+    box-shadow: 0 0 10px rgb(17, 0, 255), 0 0 40px rgb(17, 0, 255), 0 0 80px rgb(17, 0, 255);
+    transition-delay: 0.7s;
+}
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(17, 0, 255));
+}
+
+.btn-neon:hover #span1 {
+    left: 100%;
+    transition: 0.5s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(17, 0, 255));
+}
+
+.btn-neon:hover #span3 {
+    right: 100%;
+    transition: 1s;
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(17, 0, 255));
+}
+
+.btn-neon:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(17, 0, 255));
+}
+
+.btn-neon:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+div.title {
+	display: flex;
+	align-items: center;
+    color: white;
+}
+div.title h2{
+	padding: 0;
+	margin: 0;
+}
+
+#container-head {
+    width: 50%;
+    margin: 1% auto;
+    color: white;
+    border: 2px solid white;
+    box-shadow: inset 0 0 15px blue, 0 0 20px blue;
+    border-radius: 60px;
+    padding: 20px;
+    text-align: center;
+}
+
+#container-main {
+    color: aqua;
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0 0 5px white, 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
+    animation: parpadeo 3s infinite backwards;
+}
+
+@keyframes parpadeo {
+    to {
+        color: white;
+        text-shadow: none;
+    }
+}
+
+#container-p {
+    font-size: 24px;
+    font-family: monospace;
+    text-shadow: 0 0 5px cyan, 0 0 5px cyan;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
